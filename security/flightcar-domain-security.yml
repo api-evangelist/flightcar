@@ -1,0 +1,61 @@
+generated: '2026-07-20'
+method: probed
+source: dig + curl probe of flightcar.com (enrichment pipeline, local pass)
+notes: >-
+  The registrable domain flightcar.com is registered but publishes no address
+  records and serves no site. Every probe below returned an honest negative,
+  which is recorded as valid data rather than treated as a failure. Taken
+  together these are the DNS fingerprint of a parked/abandoned domain, not of a
+  live API provider.
+hosts:
+  - host: flightcar.com
+    https: false
+    reachable: false
+    http_status: null
+    curl_exit: could-not-connect
+    tls_version: null
+    hsts: null
+    note: no A/AAAA record; connection could not be established
+  - host: www.flightcar.com
+    https: false
+    reachable: false
+    http_status: null
+    curl_exit: could-not-connect
+    tls_version: null
+    hsts: null
+    note: no A/AAAA record
+  - host: api.flightcar.com
+    https: false
+    reachable: false
+    note: no DNS resolution
+  - host: developer.flightcar.com
+    https: false
+    reachable: false
+    note: no DNS resolution
+  - host: docs.flightcar.com
+    https: false
+    reachable: false
+    note: no DNS resolution
+domains:
+  - domain: flightcar.com
+    a: []
+    aaaa: []
+    mx: []
+    dnssec: false
+    dnskey: []
+    caa: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+    nameservers:
+      - 1-ceci.njalla.do.
+      - 2-nest.pipe.ma.
+      - 3-pas.njalla.in.
+    soa: 1-ceci.njalla.do. you.can-get-no.info. 2026071813
+    registrar: Tucows Domains Inc.
+    creation_date: '2005-07-11'
+    registry_expiry: '2028-07-11'
+    whois_updated: '2026-07-18'
+    status:
+      - clientTransferProhibited
+      - clientUpdateProhibited

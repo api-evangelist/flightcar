@@ -1,7 +1,31 @@
 aid: flightcar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flightcar.png
 name: FlightCar
-description: FlightCar is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  FlightCar was a United States peer-to-peer car-rental marketplace built around
+  airport travel, surfaced into the API Evangelist network as an a16z portfolio
+  lead. Enrichment probing on 2026-07-20 found no operating company behind the
+  name and no API surface of any kind. The domain flightcar.com is registered
+  but publishes no A, AAAA or MX records, resolves to no host, and sits on
+  Njalla privacy nameservers with a SOA serial dated 2026-07-18; the api,
+  developer and docs subdomains do not resolve; there is no GitHub organisation
+  at github.com/flightcar; and no first-party client library exists on npm or
+  PyPI. The Internet Archive shows the consumer site returning 200 through May
+  2016 and an Internal Server Error by July 2017, with no successful captures
+  in 2017 or 2018. FlightCar is therefore carried in the network as a defunct
+  company retained for portfolio-graph and historical continuity rather than as
+  an active API provider, and should not be re-queued for artifact enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/flightcar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +33,46 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence:
+  probed: '2026-07-20'
+  domain_registered: true
+  domain_resolves: false
+  live_website: false
+  github_org: false
+  first_party_packages: false
+  api_surface: none
+  last_successful_archive_capture: '2016-05-13'
+  first_failing_archive_capture: '2017-07-05'
+  probes_run: >-
+    DNS (A/AAAA/MX/TXT/DNSKEY/CAA/SOA/NS), whois, HTTPS reachability on the
+    apex plus www/api/developer/docs, github.com/flightcar, GitHub repository
+    search, npm registry search, PyPI, and Internet Archive CDX. All returned
+    negative or unrelated results.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Defunct
+- Transportation
+- Travel
+- Automotive
+- Car Rental
+- Marketplace
+- Peer To Peer
+- Mobility
 apis: []
+common:
+- type: DomainSecurity
+  url: security/flightcar-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

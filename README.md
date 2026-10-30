@@ -64,6 +64,38 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-FlightCar is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: a16z
+FlightCar was a United States peer-to-peer car-rental marketplace built around airport travel, surfaced into the API Evangelist network as an a16z portfolio lead. Enrichment probing on 2026-07-20 found no operating company behind the name and no API surface of any kind. The domain flightcar.com is registered but publishes no A, AAAA or MX records, resolves to no host, and sits on Njalla privacy nameservers with a SOA serial dated 2026-07-18; the api, developer and docs subdomains do not resolve; there is no GitHub organisation at github.com/flightcar; and no first-party client library exists on npm or PyPI. The Internet Archive shows the consumer site returning 200 through May 2016 and an Internal Server Error by July 2017, with no successful captures in 2017 or 2018. FlightCar is therefore carried in the network as a defunct company retained for portfolio-graph and historical continuity rather than as an active API provider, and should not be re-queued for artifact enrichment.
+
+**Areas:** Company · Defunct · Transportation · Travel · Automotive · Car Rental · Marketplace · Peer-to-Peer · Mobility
+
+## FlightCar on APIs.io (historical record)
+
+Everything profiled for FlightCar is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/flightcar/](https://apis.io/providers/flightcar/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Flightcar Domain Security](https://apis.io/security/flightcar/flightcar-domain-security/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for FlightCar: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/flightcar/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
